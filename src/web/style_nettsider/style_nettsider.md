@@ -26,7 +26,7 @@ Alle stiler skal legges mellom disse elementene. Generelt ser css-kode slik ut:
 
 ```css
 selector {
-	property: value;
+  property: value;
 }
 ```
 
@@ -41,9 +41,9 @@ La oss endre `h1` til å være rød istedenfor svart.
 
 ```html
 <style>
-	h1 {
-  		color:red;
-  	}
+  h1 {
+      color:red;
+    }
 </style>
 ```
 
@@ -73,7 +73,7 @@ Vi kan da i seksjonen `head` lage en stil for `span`
 
 ```css
 span {
-	color:orange;
+  color:orange;
 }
 ```
 
@@ -85,7 +85,7 @@ Vi kan legge til farge på bakgrunnen også, ikke bare på tekst. For eksempel:
 
 ```css
 body {
-	background-color:#D2FAFC;
+  background-color:#D2FAFC;
 }
 ```
 
@@ -95,7 +95,7 @@ Prøve nå:
 
 ```css
 h1 {
-	background-color:black;
+  background-color:black;
 }
 ```
 
@@ -103,8 +103,8 @@ Siden vi allerede hadde en `h1` deklarert i filen kan vi bare putte inn attribut
 
 ```css
 h1 {
-	color:red;
-	background-color: black;
+  color:red;
+  background-color: black;
 }
 ```
 
@@ -117,9 +117,9 @@ La oss prøve ut 72px for nå. (px betyr piksel)
 
 ```css
 h1 {
-    color:red;
-    background-color:black;
-    font-size:72px;
+  color:red;
+  background-color:black;
+  font-size:72px;
 }
 ```
 
@@ -139,8 +139,8 @@ All vår tekst vises helt borte til venstre. Vi kan endre det gjennom å bruke `
 
 ```css
 body {
-    background-color: #F8FAF4;
-    text-align: center;
+  background-color: #F8FAF4;
+  text-align: center;
 }
 ```
 La du merke til at alt på nettsiden ble sentrert når vi har lagt til ‘text-align:center’ i seksjonen “body”? Det er fordi alt innenfor elementet “body” arver stilen. Dette skjer når et element er innenfor et annet, som dette her:

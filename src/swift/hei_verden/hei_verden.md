@@ -22,21 +22,21 @@ I denne øvelsen er skjermbildene og instruksjonene for Xcode 7 beta, men det sk
 
 ## Sjekkliste {.check}
 
-+ Åpne Xcode ved å holde `cmd + mellomrom` og søk etter **Xcode**. Alternativt kan du søke etter Xcode med forstørrelsesglass-ikonet øverst i høyre hjørne.  
++ Åpne Xcode ved å holde `cmd + mellomrom` og søk etter **Xcode**. Alternativt kan du søke etter Xcode med forstørrelsesglass-ikonet øverst i høyre hjørne.
 
 + Du blir møtt med et vindu som lar deg gjøre en rekke ting. Du kan enten starte et nytt prosjekt, leke deg rundt i **Playground** eller se på og endre et eksisterende prosjekt.
 
-    ![](intro_skjerm.png)
+  ![](intro_skjerm.png)
 
 + Trykk på **Create a New Xcode project**.
 
 + En ny skjerm skal vises som lar deg velge et rammeverk for appen. Vi skal velge **Single View Application**, som gir oss et bra utgangspunkt for vår egen Hei Verden-app siden denne trenger bare ett skjermbilde.
 
-	![](lag_prosjekt.png)
+  ![](lag_prosjekt.png)
 
 + Trykker du på **Next** blir du tatt til en skjerm hvor du må fylle inn litt informasjon. I **Product Name** kan du navngi appen din (vi skal kalle vår *Hei Verden!*). **Organization Name** og **Organization Identifier** er det ikke så viktig med nå, du kan bare la den være som den er :) **Language** skal settes til Swift, mens **Devices** skal settes til iPhone.
 
-	![](app_informasjon.png)
+  ![](app_informasjon.png)
 
 + Lagre applikasjonen ved å trykke **next**, og deretter **create** (hvor du velger hvor prosjektet lagres).
 
@@ -52,7 +52,7 @@ Vi skal nå legge til en tekstetikett for å så endre teksten i `Main.storyboar
 
 + Dra en `Label` til `Main.storyboard`, og legg den helt øverst i venstre hjørne av det store kvadratet. Du må muligens dobbeltklikke på `Main.storyboard` før du får lov til å dra `Label` dit. Dobbeltklikk på `Label`, da dette lar oss endre teksten. Som tradisjonsrike skriver vi *Hei verden!*, men det er helt opp til deg hva du vil skrive! :)
 
-    ![](drag_label.png)
+  ![](drag_label.png)
 
 + Nå skal vi kjøre appen for å teste at alt fungerer. Vi gjør dette ved å trykke på den svarte pilen (playknappen) øverst i venstre hjørne. Alternativt kan du trykke `cmd + r`.
 
@@ -74,7 +74,7 @@ Vi skal nå sørge for at ved å trykke på en knapp, vil `Label` endre seg. For
 
 + Venstreklikk på `Label` i `Main.Storyboard`. Hold **ctrl** nede, venstreklikk og dra streken til mellom `override func viewDidLoad()` og `class ViewController: UIViewController {`. `Connection` lar du være `Outlet`, og sett navn til `etikett`.
 
-    ![](label_connection.png)
+  ![](label_connection.png)
 
 ## Slippe streken på riktig sted i koden {.protip}
 
@@ -88,17 +88,17 @@ Det er viktig å slippe strekene eksakt som det står i de to stegene over! Diss
 
 + Tanken er at et klikk på knappen skal endre teksten til `Label`. Variabelen `etikett` er koblet til `Label`. Vi kan derfor få teksten til å endre seg ved å skrive
 
-    ```
-    etikett.text = "Knappen sier: Hei!"
-    ```
+  ```
+  etikett.text = "Knappen sier: Hei!"
+  ```
 
-    mellom `{` og `}` der du slapp knappen i koden (`func knapp`).
+  mellom `{` og `}` der du slapp knappen i koden (`func knapp`).
 
 + Kjør appen som du lærte i Steg 2 ved å enten klikke på den svarte pilen øverst i hjørnet eller trykke `cmd + r`.
 
 + Klikk på knappen og observer hva som skjer! Endret `Label` seg til teksten du skrev i `etikett.text = "Knappen sier: Hei!"`? Hvis etiketten ikke viser hele `Knappen sier: Hei!"`, må du endre størrelsen på `Label`. Klarer du å gjøre det selv?
 
-    ![](change_label.png)
+  ![](change_label.png)
 
 ## Utfordring - Variabler {.try}
 Prøv å definer en variabel nedenfor `@IBOutlet weak var etikett: UILabel!`, og sett den til å være ditt navn. Klarer du å få `Label` til å vise verdien av variabelen ved å endre `etikett.text`?
@@ -117,7 +117,7 @@ Nå skal vi legge inn et tekstfelt i appen, så vi kan ta det brukeren skriver i
 
 + I `@IBAction func knapp(sender: AnyObject) { }` kan du bytte ut `etikett.text = "Knappen sier: Hei!"` med `etikett.text = tekstfelt.text`. Det brukeren skriver i inn i tekstfeltet er tilgjengelig i `text`-egenskapen til tekstfeltet, og vi henter ut denne informasjonen når vi trykker på knappen.
 
-    ![](textfield_input.png)
+  ![](textfield_input.png)
 
 ## Utfordring - Kan du lage din egen versjon? {.try}
 Nå som du har lært det grunnleggende, hvorfor ikke lage en app som har flere knapper og tekstfelt? Kanskje du kan få den til å fortelle en morsom historie basert på ord brukeren skriver inn? Vis gjerne appen til bekjente og be om tilbakemeldinger!

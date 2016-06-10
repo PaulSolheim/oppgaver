@@ -18,7 +18,7 @@ La oss se litt på noen av de grunnleggende byggeklossene i et dataprogram.
 
 ## Variable
 
-I de aller fleste programmer så har man bruk for å lagre informasjon, for så å ha den lett tilgjengelig for senere bruk. Da bruker man en __variabel__ for å holde på den informasjonen. Hvis jeg for eksempel vil skrive et biblioteksprogram, så kan det være en god idé å lage en variabel for hver bok i biblioteket. Man kan gi variabler et __navn__ og et __innhold__. I bibliotekseksempelet kunne vi da ha gitt en variabel navnet “Ringenes Herre” og innholdet ville da vært all teksten i Ringenes Herre bøkene. Sånn sett kan man også se på variabler som skuffer for å oppbevare data du bruker i programmet ditt. I Scratch så finner du alt som har med variabler å gjøre under `Data`{.blockorange}. For å lage en ny variabel klikker du på `Lag en Variabel`{.blocklightgrey}. Du kan endre verdien til variablen med blokken `sett [variabel v] til (0)`{.blockorange}. I spill kan variable være nyttige for å holde styr på poeng, tid, tur, hastighet, vinner og mye mer.
+I de aller fleste programmer så har man bruk for å lagre informasjon, for så å ha den lett tilgjengelig for senere bruk. Da bruker man en __variabel__ for å holde på den informasjonen. Hvis jeg for eksempel vil skrive et biblioteksprogram, så kan det være en god idé å lage en variabel for hver bok i biblioteket. Man kan gi variabler et __navn__ og et __innhold__. I bibliotekseksempelet kunne vi da ha gitt en variabel navnet “Ringenes Herre” og innholdet ville da vært all teksten i Ringenes Herre bøkene. Sånn sett kan man også se på variabler som skuffer for å oppbevare data du bruker i programmet ditt. I Scratch så finner du alt som har med variabler å gjøre under `Data`{.blockorange}. For å lage en ny variabel klikker du på `Lag en Variabel`{.blocklightgrey}. Du kan endre verdien til variablen med blokken `sett [variabel v] til [0]`{.blockorange}. I spill kan variable være nyttige for å holde styr på poeng, tid, tur, hastighet, vinner og mye mer.
 
 ## Løkker
 
@@ -36,17 +36,17 @@ Når man jobber med større mengder data, så kan det være lurt å bruke lister
 
 Til slutt så viser vi et eksempel på et tenkt program en datamaskin kunne brukt for å lage (data)pannekaker. Legg merke til at programmet hverken er skrevet helt på godt norsk eller i et programmeringsspråk. Dette er for å gjøre det litt mer forståelig.
 
-	hent 3 egg
-	hent 2 dl melk
-	hent 2 dl mel
-	hent 1 bakebolle
+  hent 3 egg
+  hent 2 dl melk
+  hent 2 dl mel
+  hent 1 bakebolle
 
-	bland mel i bakebolle
-	bland melk i bakebolle
+  bland mel i bakebolle
+  bland melk i bakebolle
 
-	gjenta 3 ganger:
-		hvis egg ikke er rottent
-			bland 1 egg i bakebollen
+  gjenta 3 ganger:
+    hvis egg ikke er rottent
+      bland 1 egg i bakebollen
 
-	gjenta til bakebollen er tom:
-		stek en pannekake*
+  gjenta til bakebollen er tom:
+    stek en pannekake*
